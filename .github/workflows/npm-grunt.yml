@@ -22,8 +22,11 @@ jobs:
       with:
         node-version: 18.x
 
-    - name: Build
+    - name: Install dependencies
       run: npm install
+
+    - name: Build
+      run: npm run build
 
     - name: Testes Unitários
       run: npm run test
