@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main  # ajuste conforme sua branch principal
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v2
+
+    - name: Configurar ambiente Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'  # ajuste conforme a versão do Node.js que você está usando
+
+    - name: Instalar dependências
+      run: npm install
+
+    - name: Build do projeto
+      run: npm run build  # ajuste o comando conforme necessário
+
+    - name: Rodar testes unitários
+      run: npm run test  # ajuste o comando conforme necessário

@@ -13,7 +13,7 @@ import { TestService } from "./src/service/teste.service";
 import { ArquivoService } from "./src/service/arquivo/arquivo.service";
 
 /** Repositorires */
-import { FaturaRepository } from "./src/repository/fatura.repository";
+import { FaturaRepository } from "./src/repository/fatura/fatura.repository";
 
 /** Utils */
 import { Prisma } from "./src/utils/prisma";
