@@ -23,4 +23,4 @@ Projeto back end com foco em extrair dados de uma fatura de energia e disponibil
 ```DATABASE_URL``` é a variável responsável pela comunicação com o banco de dados.
 
 ## Pipelines
-toda mudança na branch ```main``` irá executar uma pipeline onde será feito o build e testes unitários, para duvidas leia o arquivo: ```workflows.yaml```
+toda mudança na branch ```main``` irá executar uma pipeline onde será feito o build e testes unitários, para duvidas leia o arquivo: ```npm-grunt.yaml```
