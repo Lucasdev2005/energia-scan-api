@@ -24,3 +24,9 @@ Projeto back end com foco em extrair dados de uma fatura de energia e disponibil
 
 ## Pipelines
 toda mudança na branch ```main``` irá executar uma pipeline onde será feito o build e testes unitários, para duvidas leia o arquivo: ```npm-grunt.yaml```
+
+## Arquivos para testes
+neste link você encontrará arquivos para realizar os testes necessários.
+
+[Arquivos]([https://website-name.com](https://drive.google.com/drive/folders/1lCfuop8bqWsOdfJp8LHGXA3AVAsrutVp?usp=sharing))
+
