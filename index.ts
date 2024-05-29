@@ -2,14 +2,11 @@ import { Main } from "./src/main";
 
 /** Controllers */
 import { FaturaController } from "./src/controller/fatura/fatura.controller";
-import { TestController } from "./src/controller/test/test.controller";
 
 /** Routes */
 import { faturaRoutes } from "./src/controller/fatura/routes";
-import { testRoutes } from "./src/controller/test/routes";
 
 /** Services */
-import { TestService } from "./src/service/teste.service";
 import { ArquivoService } from "./src/service/arquivo/arquivo.service";
 
 /** Repositorires */
@@ -21,11 +18,6 @@ import { FaturaService } from "./src/service/fatura/fatura.service";
 
 const main = new Main({
     controllers: [
-        {
-            class: TestController,
-            routes: testRoutes,
-            dependencies: [{ class: TestService }]
-        },
         {
             class: FaturaController,
             dependencies: [ {

@@ -125,9 +125,10 @@ export class FaturaService {
     }
     
     private stringParaData(mesAnoStr: string): Date {
+        
         const meses: { [key: string]: number } = {
-            JAN: 0, FEB: 1, MAR: 2, APR: 3, MAY: 4, JUN: 5,
-            JUL: 6, AUG: 7, SEP: 8, OCT: 9, NOV: 10, DEC: 11
+            JAN: 0, FEV: 1, MAR: 2, ABR: 3, MAI: 4, JUN: 5,
+            JUL: 6, AGO: 7, SET: 8, OUT: 9, NOV: 10, DEZ: 11
         };
         
         const [mesStr, anoStr] = mesAnoStr.split('/');
@@ -138,7 +139,6 @@ export class FaturaService {
             throw new Error("Mês inválido na string: " + mesStr);
         }
     
-        // Retorna um objeto Date no primeiro dia do mês e ano especificados
         return new Date(ano, mes, 1);
     }
     
