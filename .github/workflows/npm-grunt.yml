@@ -23,7 +23,7 @@ jobs:
       run: npm install
 
     - name: Build do projeto
-      run: npm run build  # ajuste o comando conforme necessário
+      run: npx prisma generate && npm run build
 
     - name: Rodar testes unitários
-      run: npm run test  # ajuste o comando conforme necessário
+      run: npm run test

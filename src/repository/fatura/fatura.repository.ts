@@ -71,14 +71,14 @@
                 where
             });
         
-            const consumoArray = consumoPorMes.map((item) => {
+            const consumoArray = consumoPorMes.map((item: any) => {
                 return {
                     name: this.formatDate(item.FTR_Data_Referente.toISOString()),
                     valor: item._sum.FTR_Consumo_Energia
                 };
             });
         
-            const valorTotalArray = valorTotalPorMes.map((item) => {
+            const valorTotalArray = valorTotalPorMes.map((item: any) => {
                 return {
                     name: this.formatDate(item.FTR_Data_Referente.toISOString()),
                     valor: item._sum.FTR_Valor_Total
