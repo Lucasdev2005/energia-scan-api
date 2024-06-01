@@ -2,3 +2,4 @@
 jest.config.ts
 .env
 dist
+node_modules
