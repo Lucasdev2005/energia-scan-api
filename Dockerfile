@@ -4,6 +4,7 @@ FROM node:18 as builder
 COPY . .
 
 RUN npm install
+RUN npx prisma generate
 RUN npm run build
 
 ## copiando dist do projeto, fazendo generate do prisma e rodando em container separado. ##
